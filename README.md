@@ -8,6 +8,7 @@ Start by adding the [Jamf_Remote_Device_ID_EA](https://github.com/zpropheter/Jam
 <img src="https://i.imgur.com/EdXgLui.png" width="800" height="400" />
 
 Enable searching for the value in Jamf_Remote_Device_ID_EA by going to Settings> Computer Management> Inventory Display and checking the box for the EA
+
 <img src="https://i.imgur.com/yaC50Lv.png" width="800" height="400" />
 
 ##Log Review
