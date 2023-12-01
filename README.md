@@ -11,8 +11,8 @@ Enable searching for the value in Jamf_Remote_Device_ID_EA by going to Settings>
 
 <img src="https://i.imgur.com/yaC50Lv.png" width="800" height="400" />
 
-##Log Review
-Run the script [Remote_Assist_Sessions.sh] (https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Remote_Assist_Sessions.sh) and find the sessions you want to review.
+## Log Review
+Run the script [Remote_Assist_Sessions.sh](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Remote_Assist_Sessions.sh) and find the sessions you want to review.
 
 Note the output for:
 -deviceID
