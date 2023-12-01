@@ -26,3 +26,8 @@ To find the -deviceID associated with the session: \
 To find the user associated with -sessionAdminID \
 -Go to https://yourserver.jamfcloud.com/accounts.html?id=##&o=r \
 -Replace ## with the -sessionAdminID to find the name of the account that initiated the Jamf Remote Session \
+
+## Client Logs
+Logs for Jamf Remote Assist are stored in /Users/Shared/jamfdata/ \
+You can manually collect the logs or use Jamf-Log-Grabber, which is designed for getting all installed Jamf Application Logs.
+Download the latest copy of Jamf Log Grabber [here](https://github.com/zpropheter/Jamf-Log-Grabber/tree/main)
