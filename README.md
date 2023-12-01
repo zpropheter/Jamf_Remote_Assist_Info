@@ -3,7 +3,7 @@
 
 Here's how to use the Jamf Remote Assist Workflow to see who initiated a session on which devices in your organization.
 
-##Setup
+## Setup
 Start by adding the [Jamf_Remote_Device_ID_EA](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Jamf_Remote_Device_ID_EA)) to your environment
 <img src="https://i.imgur.com/EdXgLui.png" width="800" height="400" />
 
