@@ -2,11 +2,11 @@
 ## A workflow to enable better understanding of Jamf Remote Assist Sessions 
 
 This repository contains the following:
--EA to provide count of files uploaded from MacOS device to Remote Admin Endpoint
--EA to provide file names of transferred files from Remote Admin Endpoint to MacOS device
--EA to implement Logging workflow
--README.md to walk through Logging Workflow
--(Coming soon!) Script to safely delete files containing counts in EA that will reset values at next check-in
+- EA to provide count of files uploaded from MacOS device to Remote Admin Endpoint
+- EA to provide file names of transferred files from Remote Admin Endpoint to MacOS device
+- EA to implement Logging workflow
+- README.md to walk through Logging Workflow
+- (Coming soon!) Script to safely delete files containing counts in EA that will reset values at next check-in
 
 ## Setup
 Start by adding the [Jamf_Remote_Device_ID_EA](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Jamf_Remote_Device_ID_EA) to your environment \
@@ -20,8 +20,8 @@ Enable searching for the value in Jamf_Remote_Device_ID_EA by going to Settings>
 Run the script [Remote_Assist_Sessions.sh](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Remote_Assist_Sessions.sh) and find the sessions you want to review.
 
 Note the output for:
--deviceID
--sessionAdminId
+- deviceID
+- sessionAdminId
 
 To find the -deviceID associated with the session: \
 -Run a blank search in Computers> Search Inventory \
