@@ -1,7 +1,12 @@
 # Jamf_Remote_Assist_Info
 ## A workflow to enable better understanding of Jamf Remote Assist Sessions 
 
-Here's how to use the Jamf Remote Assist Workflow to see who initiated a session on which devices in your organization. 
+This repository contains the following:
+-EA to provide count of files uploaded from MacOS device to Remote Admin Endpoint
+-EA to provide file names of transferred files from Remote Admin Endpoint to MacOS device
+-EA to implement Logging workflow
+-README.md to walk through Logging Workflow
+-(Coming soon!) Script to safely delete files containing counts in EA that will reset values at next check-in
 
 ## Setup
 Start by adding the [Jamf_Remote_Device_ID_EA](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Jamf_Remote_Device_ID_EA) to your environment \
