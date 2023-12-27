@@ -8,6 +8,9 @@ This repository contains the following:
 - README.md to walk through Logging Workflow
 - (Coming soon!) Script to safely delete files containing counts in EA that will reset values at next check-in
 
+This repository does NOT contain the following:
+- A suitable long term solution for auditing logs in Jamf Remote Assist
+
 ## Setup
 Start by adding the [Jamf_Remote_Device_ID_EA](https://github.com/zpropheter/Jamf_Remote_Assist_Info/blob/main/Jamf_Remote_Device_ID_EA) to your environment \
 <img src="https://i.imgur.com/EdXgLui.png" width="800" height="400" />
