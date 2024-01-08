@@ -37,7 +37,7 @@ nc -zv files.jra.services.jamfcloud.com 443
 nc -zv download.jra.services.jamfcloud.com 443
 
 #Test all relays for region
-for i in {1..100}
+for i in {1..99}
 do
 	nc -zv relay-$i.$region.jra.services.jamfcloud.com 443
 done
