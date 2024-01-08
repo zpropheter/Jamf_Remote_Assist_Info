@@ -28,6 +28,8 @@
 #
 ####################################################################################################
 
+#Run this script on a device having trouble connecting to JRA Services
+
 #Declare Region- Options are us, euro, and asia
 region="us"
 
