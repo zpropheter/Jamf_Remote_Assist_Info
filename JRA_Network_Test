@@ -47,3 +47,5 @@ done
 
 #Test Port 5555
 nc -zv socket.$region.jra.services.jamfcloud.com 5555
+
+eccho "If all connections are successful, make sure the IP address listed in Jamf Pro for the device record matches the current IP address on the device as that may also cause issues"
