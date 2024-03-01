@@ -1,4 +1,7 @@
 # Jamf_Remote_Assist_Info
+## Update as of Jamf Pro 11.2
+Jamf Pro 11.2 has included logging for JRA. You are welcome to use this workflow if you like it better but may find the built in feature easier to navigate.
+
 ## A workflow to enable better understanding of Jamf Remote Assist Sessions 
 
 This repository contains the following:
