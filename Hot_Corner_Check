@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#Notes HC=hot corner TL=Top Left TR=Top Righ BR=Bottom Right BL=Bottom Left and a trailing R means result
+#Utility to read hot corners when using Jamf Remote Assist to prevent accidentally ending session with hot corners
+
+loggedInUser=$( echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/ && ! /loginwindow/ { print $3 }' )
+
+echo $loggedInUser
+
+hctl=$(defaults read /Users/$loggedInUser/Library/Preferences/com.apple.dock wvous-tl-corner 2>/dev/null)
+hctr=$(defaults read /Users/$loggedInUser/Library/Preferences/com.apple.dock wvous-tr-corner 2>/dev/null)
+hcbl=$(defaults read /Users/$loggedInUser/Library/Preferences/com.apple.dock wvous-bl-corner 2>/dev/null)
+hcbr=$(defaults read /Users/$loggedInUser/Library/Preferences/com.apple.dock wvous-br-corner 2>/dev/null)
+
+
+
+
+
+if [[ $hctl == "" ]]; then
+	echo "No hot corner set top left"
+else
+	hctlr="Top Left"
+fi
+
+if [[ $hctr == "" ]]; then
+	echo "No hot corner set top right"
+else
+	hctrr="Top Right"
+fi
+
+if [[ $hcbl == "" ]]; then
+	echo "No hot corner set bottom left"
+else
+	hcblr="Bottom Left"
+fi
+
+if [[ $hcbr == "" ]]; then
+	echo "No hot corner set bottom right"
+else
+	hcbrr="Bottom Right"
+
+fi
+
+echo "$hcbrr"
+
+if [[ $hctlr == "" ]] && [[ $hcbrr == "" ]] && [[ $hcblr == "" ]] && [[ $hctrr == "" ]]; then
+	echo "all corners are not set"
+else
+	/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -description "Hot corners are set for the following corners: $hctlr $hctrr $hcbrr $hcblr" -windowType hud -title "Warning" -heading "Hot Corner Check"
+fi
+
