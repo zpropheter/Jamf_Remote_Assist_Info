@@ -1,4 +1,9 @@
 # Jamf_Remote_Assist_Info
+
+## Update as of June 2024
+ **Jamf Remote Assist 1.3.0 no longer users /users/shared for log storing and utilizes unified logging. Because of that, this workflow will no longer work. Check out built in Jamf Pro features for JRA logs and Jamf Log Grabber for any additional reporting you may want..**
+
+
 ## Update as of Jamf Pro 11.2
 Jamf Pro 11.2 has included logging for JRA. You are welcome to use this workflow if you like it better but may find the built in feature easier to navigate.
 
